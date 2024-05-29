@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="bg-secondary">
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+     <form action="signup.php" method="post" class="bg-warning p-4 w-50" onsubmit="return validation()" >       
+        <h3>Signup-here...</h3>
+
+        <input required type="text" placeholder="Username" name="user" class="form-control mt-2" >
+        <input id="pass1" required type="password" placeholder="Password" name="pass"class="form-control mt-2">
+        <input  id="pass2" type="password" placeholder="Re-type password" name="re-pass"class="form-control mt-2">
+  
+        <select name="usertype" class="form-control mt-2">
+                 <option value="vendor">vendor</option>
+                 <option value="customer">customer</option>
+        
+        </select>
+
+        <div class="text-center mt-3">
+        <button class="btn btn-success ">Signup</button>
+    </div>
+</form>
+</div>  
+
+
+<script>
+     
+     function validation(){
+            pass1Obj=document.getElementById("pass1")
+             pass2Obj=document.getElementById("pass2")
+ if(pass1.value==pass2.value){
+return true}
+
+ else{
+    alert("Password mismatch")
+    return false
+    
+ }
+
+ }
+
+</script>
+
+
+
+</body>
+</html>

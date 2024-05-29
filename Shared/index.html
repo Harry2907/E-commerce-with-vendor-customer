@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopoholic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="#home">Shopoholic</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+        </ul>
+    </nav>
+
+    
+    <header id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Shopoholic</h1>
+            <p class="pa">Your Ultimate Shopping Destination</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+        <div class="hero-image">
+            
+            <img src="img/hero (3).png" alt="Hero Image">
+        </div>
+    </header>
+
+    
+    <section id="about" class="about">
+        <h2>About Shopoholic</h2>
+        <p class="pa">Indulge your inner shopoholic at Shopaholic , where every desire is just a click away! We bring you an unparalleled online shopping experience, offering the latest trends and timeless classics across a wide range of categories.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+   
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <p class="pa">If you have any questions, feel free to reach out to us. We're here to help!</p>
+
+        <div class="contact-details">
+            <div class="contact-info">
+                <h2>Our Address</h2>
+                <p>123 Shopping Street</p>
+                <p>Shop City, SH 45678</p>
+            </div>
+            <div class="contact-info">
+                <h2>Email Us</h2>
+                <p><a href="mailto:support@shopoholic.com">support@shopoholic.com</a></p>
+            </div>
+            <div class="contact-info">
+                <h2>Call Us</h2>
+                <p>+91 22-411-252</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Shopoholic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
