@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>E-commerce Platform</title>
-</head>
+
 <body>
   <h1>E-commerce Platform with Vendor and Customer Modules</h1>
 
